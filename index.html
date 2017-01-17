@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chuck Norris</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="container">
+    <!-- <img src="css/norris.jpg" class="watermark" alt="Chuck Norris" /> -->
+
+    <!-- <div class="bck-img"></div> -->
+      <h1 class="title">Chuck Norris Jokes</h1>
+      <div class="container">
+        <form>
+          <input type="text" id="firstName" placeholder="First Name">
+          <input type="text" id="lastName" placeholder="Last Name">
+          <p>How many jokes?</p>
+          <input type="number" min="0" max="10" step="1" id="numberOfJokes" value="1" >
+          <input type="submit" id="newJoke" value="Get a new joke">
+        </form>
+        <ul class="jokes">
+
+        </ul>
+      </div>
+      <div class="container">
+        <h3 class="previousJokes">Previous Jokes</h3>
+        <ul class="previousJokes">
+
+        </ul>
+      </div>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
