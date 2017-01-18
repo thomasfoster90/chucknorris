@@ -27,7 +27,7 @@ function loadJoke() {
     result.done(function(object) {
       for (var i = 0; i < object.value.length; i++) {
         var jokeText = object.value[i].joke;
-        var $jokeList = $("<li />").html(jokeText).addClass("cJ");
+        var $jokeList = $("<li />").html(jokeText).addClass("jL");
         $('ul.jokes').append($jokeList);
 
       }
@@ -47,9 +47,4 @@ function hideAndStoreJoke() {
       var newLastJoke = $("<li />").html(arr[i]);
       $('ul.previousJokes').prepend(newLastJoke);
     }
-    // var lastJoke = $('ul.jokes li').html();
-    // var newLastJoke = $("<li />").html(lastJoke);
-    // $('ul.previousJokes').prepend(newLastJoke);
-    // $('ul.jokes').empty();
-
 }
